@@ -1,0 +1,24 @@
+.lab-main{max-width:1440px}
+.lab-grid{display:grid;grid-template-columns:300px minmax(0,1fr) 300px;gap:14px}
+.lab-stream,.lab-trace{background:#08121b;border-radius:7px;padding:12px;max-height:520px;overflow:auto;font-size:12px;line-height:1.55}
+.lab-trace{max-height:240px}
+.lab-card{border-top:1px solid #243846;padding-top:10px;margin-top:10px}
+.lab-card:first-child{border-top:0;margin-top:0;padding-top:0}
+.lab-card b{color:#d7ece4}
+.lab-form{display:grid;gap:8px;margin:12px 0}
+.lab-form input,.lab-form select{font:inherit;background:#08121b;color:#d5e5eb;border:1px solid #34566a;border-radius:5px;padding:8px}
+.lab-actions{display:flex;gap:8px;flex-wrap:wrap}
+.lab-actions button,.approval-row button{font:inherit;border-radius:5px;padding:10px 12px;font-weight:800;letter-spacing:.08em}
+.lab-actions button{background:#122936;color:#c7e7ed;border:1px solid #426477}
+.approval-row{display:flex;gap:8px;margin-top:8px}
+.approval-row .allow{background:#16382f;color:#b7f3d4;border:1px solid #3f8f72}
+.approval-row .deny{background:#3a1c22;color:#ffc1ba;border:1px solid #8a4d55}
+.tag{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10px;letter-spacing:.08em}
+.tag.allow{background:#14352c;color:#9be7c4}
+.tag.deny{background:#3a1d22;color:#ffb7ae}
+.tag.approve{background:#3a3018;color:#f3d59a}
+.tag.attack{background:#402018;color:#ffb199}
+.muted-block{color:#8aa3b2;font-size:12px;white-space:pre-wrap}
+.contract{font-size:11px;color:#9db7c2;line-height:1.5}
+.warn{color:#f3d59a}
+@media(max-width:1100px){.lab-grid{grid-template-columns:1fr}}

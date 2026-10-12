@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Adversarial Agent Lab — Tool Gateway Lab</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/lab.css">
+</head>
+<body>
+  <header>
+    <div>
+      <div class="logo">◈ TOOL GATEWAY / ADVERSARY</div>
+      <div class="sub">LOCAL MODEL · YOUR GATEWAY · SIMULATED TOOLS</div>
+    </div>
+    <div class="hud"><a href="/" style="color:#8ddcbd">Operator</a> &nbsp; <a href="/architect.html" style="color:#8ddcbd">Architect</a></div>
+  </header>
+  <main class="lab-main">
+    <div class="top">
+      <div>
+        <div class="eyebrow">PHASE 3</div>
+        <h1>Adversarial Agent Lab</h1>
+        <p class="muted">A local Qwen 1.5B model proposes tool calls. <code>src/player-policy.js</code> decides them. Only <code>allow</code> reaches a virtual tool. Start the model with <code>python scripts/serve_model.py</code> in qwen-lora-lab. Nothing here sends email, edits your disk, or calls the public network.</p>
+      </div>
+    </div>
+    <div class="lab-grid">
+      <section class="panel">
+        <div class="panelhead">MISSION</div>
+        <div class="body" id="mission"></div>
+      </section>
+      <section class="panel">
+        <div class="panelhead">AGENT <span id="run-state">IDLE</span></div>
+        <div class="body"><div class="lab-stream" id="agent">Start a mission to see the model.</div></div>
+      </section>
+      <section class="panel">
+        <div class="panelhead">SECURITY</div>
+        <div class="body" id="security"></div>
+      </section>
+    </div>
+    <section class="panel" style="margin-top:14px">
+      <div class="panelhead">TRACE</div>
+      <div class="body"><div class="lab-trace" id="trace">No events yet.</div></div>
+    </section>
+  </main>
+  <script type="module" src="/src/lab-app.js"></script>
+</body>
+</html>
